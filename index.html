@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FFD700; /* Change the color on hover */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Add your page content here -->
+
+<script>
+  document.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    header.style.backgroundColor = window.scrollY > 0 ? "#555" : "#333";
+  });
+</script>
+
+</body>
+</html>
